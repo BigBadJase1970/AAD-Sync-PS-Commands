@@ -1,0 +1,6 @@
+Get-ADSyncScheduler
+Set-ADSyncScheduler -CustomizedSyncCycleInterval d.HH:mm:ss
+Start-ADSyncSyncCycle -PolicyType Initial
+Start-ADSyncSyncCycle -PolicyType Delta
+Stop-ADSyncSyncCycle
+Get-ADSyncConnectorRunStatus
