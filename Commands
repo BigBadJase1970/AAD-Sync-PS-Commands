@@ -1,4 +1,4 @@
-
+# Set auto
 #Get-ADSyncScheduler
 Set-ADSyncScheduler -CustomizedSyncCycleInterval d.HH:mm:ss
 Start-ADSyncSyncCycle -PolicyType Initial
@@ -8,4 +8,6 @@ Get-ADSyncConnectorRunStatus
 
 # Check auto upgrade status
 Get-ADSyncAutoUpgrade
-
+# Set auto upgrade status
+Set-ADSyncAutoUpgrade
+# Then enter "enable" or "disable"
