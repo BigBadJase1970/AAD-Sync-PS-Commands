@@ -1,6 +1,11 @@
-Get-ADSyncScheduler
+
+#Get-ADSyncScheduler
 Set-ADSyncScheduler -CustomizedSyncCycleInterval d.HH:mm:ss
 Start-ADSyncSyncCycle -PolicyType Initial
 Start-ADSyncSyncCycle -PolicyType Delta
 Stop-ADSyncSyncCycle
 Get-ADSyncConnectorRunStatus
+
+# Check auto upgrade status
+Get-ADSyncAutoUpgrade
+
